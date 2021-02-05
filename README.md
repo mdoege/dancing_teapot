@@ -2,7 +2,7 @@
 
 ## A simple software renderer in Python using Gouraud shading
 
-The input file has to be Wavefront .OBJ with vertex normals ("vn") and all faces have to be triangles. The scaling factor "s" on line 18 needs to be adjusted for different model dimensions.
+The input file has to be Wavefront .OBJ with vertex normals ("vn") and all faces have to be triangles. The scaling factor "s" on line 23 needs to be adjusted for different model dimensions.
 
 ### How to run
 
