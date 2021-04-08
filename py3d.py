@@ -127,6 +127,8 @@ for dd, ff in FLIST:
             d = (PFAC - zzz) / PFAC     # apply some linear perspective
             c = int(f1*ca + f2*cb)
             xpos, ypos = int(xoff+s*d*xxx+xs/2), int(yoff+s*d*yyy+ys/2)
+            if xpos < 0 or ypos < 0 or xpos > xs - 1 or ypos > ys - 1:
+            	continue
             zind = ypos * xs + xpos
             # use Z buffer to determine if a point is visible
             if zzz < zbuf[zind]:
